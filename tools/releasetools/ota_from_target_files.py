@@ -817,7 +817,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   device_specific.FullOTA_InstallBegin()
 
   if target_info.get("system_root_image") == "true":
-    sysmount = "/"
+    sysmount = "/system_root"
   else:
     sysmount = "/system"
 
